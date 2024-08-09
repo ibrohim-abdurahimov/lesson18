@@ -1,0 +1,150 @@
+.hero{
+    &__btn{
+        background-color: #E7E8E3;
+        border-radius: 32px;
+        color: #000;
+    }
+    &__title{
+        font-size: 56px;
+        font-weight: 400;
+    }
+    &__desc{
+        color: #65665C;
+        font-size: 20px;
+        font-weight: 400;
+        width: 500px;
+        
+    }
+    background-color: $bg-color;
+    &__wrapper{
+        display: flex;
+    }
+    &__text,
+    &__img{
+        width: 50%;
+    }
+    &__text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 20px;
+    }
+    &__input{
+        display: flex;
+        gap: 16px;
+    }
+    &__search{
+        display: flex;
+        align-items: flex-end;
+        gap: 3px;
+        background-color: #fff;
+        padding:9px 16px ;
+        border-radius: 6px;
+        input{
+            outline: none;
+            border: none;
+            color: #65665C;
+            font-size: 20px;
+        }
+    }
+}
+@media (max-width:1035px) {
+    .hero{
+        &__title{
+            font-size: 50px;
+        }
+        &__desc{
+            width: 450px;
+        }
+    }
+}
+@media (max-width:990px) {
+    .hero{
+        &__btn{
+            margin: auto;
+        }
+        &__title{
+            margin: auto;
+            text-align: center;
+        }
+        &__desc{
+            width: 100%;
+            text-align: center;
+        }
+        &__wrapper{
+            flex-direction: column-reverse;
+            gap: 30px;
+            padding-bottom: 10px;
+        }
+        &__img,
+        &__text{
+            width: 100%;
+        }
+        &__img img{
+            width: 100%;
+        }
+        &__input{
+            margin: auto;
+        }
+
+        
+    }
+}
+@media (max-width:750px) {
+    .hero{
+        &__title{
+            font-size: 45px;
+        }
+        &__desc{
+            font-size: 16px;
+        }
+    }
+    
+}
+@media (max-width:455px) {
+    .hero{
+        &__title{
+            font-size: 40px;
+        }
+        &__desc{
+            font-size: 16px;
+        }
+        &__search{
+            padding:8px 13px ;
+            input{
+                font-size: 16px;
+            }
+        }
+    }
+    
+}
+@media (max-width:405px) {
+    .hero{
+        &__title{
+            font-size: 35px;
+        }
+        &__desc{
+            font-size: 14px;
+        }
+        &__search{
+            padding: 6px 10px;
+            input{
+                font-size: 14px;
+            }
+        }
+
+    }
+}
+@media (max-width:375px) {
+    .hero{
+        &__title{
+            font-size: 30px;
+        }
+        &__input{
+            flex-direction: column;
+            width: 100%;
+        }
+    }
+    
+}
