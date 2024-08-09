@@ -1,5 +1,5 @@
 .process{
-    margin-top: 128px;
+    margin: 128px 0;
     &__wrapper{
         display: flex;
         align-items: center;
@@ -102,11 +102,11 @@
             justify-content: center;
         }
         &__title{
-            margin: auto;
+            margin: 16px auto;
             text-align: center;
         }
         &__desc{
-            margin: auto;
+            margin: 16px auto;
             text-align: center;
         }
         }
