@@ -94,15 +94,15 @@
             justify-content: center;
             align-items: center;
         }
-        &__card{
-            width: 100%;
-        }
+        
     }
     .card{
         &__logo{
-            margin: auto;
+            display: flex;
+            justify-content: center;
         }
         &__title{
+            margin: auto;
             text-align: center;
         }
         &__desc{
